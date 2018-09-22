@@ -8,17 +8,16 @@ python:
 
 sudo: required
 
-#jobs:
-#  include:
-#    - stage: doc
-#      script:
-#        - make install-docs-requirements
-#        - make docs
+jobs:
+  include:
+    - stage: doc
+      script:
+        - make install-docs-requirements
+        - make docs
 
 install:
   - pip3 install --quiet ${PYTORCH} torchvision
   - python setup.py develop
-  - make install-docs-requirements
   - make install-tests-requirements
 
 script:
