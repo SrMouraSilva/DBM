@@ -17,8 +17,7 @@ sudo: required
 #        - make docs
 
 install:
-  - pip3 install ${PYTORCH}
-  - pip3 install torchvision
+  - pip3 install --quiet ${PYTORCH} torchvision
   - python setup.py develop
   - make install-docs-requirements
   - make install-tests-requirements
