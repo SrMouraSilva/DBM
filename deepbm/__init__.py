@@ -11,19 +11,3 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
-
-class DBM(object):
-    """
-    Deep Boltzmann Machine
-
-    :param v:
-    :param h1:
-    :param h2:
-    """
-
-    def __init__(self, visible_size: int, hidden1_size: int, hidden2_size: int):
-        self.visible_size = visible_size
-
-        self.hidden1_size = hidden1_size
-        self.hidden2_size = hidden2_size

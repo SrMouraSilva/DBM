@@ -14,7 +14,7 @@
 
 
 import unittest
-from dbm.dbm import DBM
+from deepbm.dbm import DBM
 
 
 class DBMTest(unittest.TestCase):

@@ -32,7 +32,7 @@ docs-see: docs
 install: install-docs-requirements install-tests-requirements
 
 install-docs-requirements:
-	pip install sphinx sphinx_rtd_theme
+	pip install sphinx sphinx_rtd_theme sphinxcontrib-bibtex sphinx-autodoc-typehints
 
 install-tests-requirements:
 	pip install pytest pytest-cov
@@ -41,7 +41,7 @@ run:
 	@echo "Run option isn't created =)"
 
 test: clean-test
-	pytest --cov=dbm
+	pytest --cov=deepbm
 
 test-docs:
 	python -m doctest *.rst -v

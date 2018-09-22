@@ -19,7 +19,7 @@ from setuptools import setup
 def readme():
     here = path.abspath(path.dirname(__file__))
 
-    with open(path.join(here, 'README.md'), encoding='UTF-8') as f:
+    with open(path.join(here, 'README.rst'), encoding='UTF-8') as f:
         return f.read()
 
 setup(
@@ -39,7 +39,7 @@ setup(
     license="Apache Software License v2",
 
     packages=[
-        'dbm'
+        'deepbm'
     ],
 
     install_requires=[
